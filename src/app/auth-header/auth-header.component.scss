@@ -1,0 +1,15 @@
+.auth-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  &_logo {
+  }
+
+  &_text {
+    color: #000;
+    font-family: var(--ff);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.16px;
+  }
+}

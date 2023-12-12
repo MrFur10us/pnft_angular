@@ -1,0 +1,31 @@
+<div class="auth-form">
+  <div class="form__title">NFT Access</div>
+  <div class="form__text">Please fill your detail to access your account.</div>
+  <div class="email__text">Email</div>
+  <input class="email__input" type="email" placeholder="Enter your email" [(ngModel)]="inputText" />
+  <button (click)="inputText = ''">
+    <img src="assets/clear.svg" alt="" />
+  </button>
+  <div class="password__text">Password</div>
+  <input
+    [type]="passwordShow ? 'password' : 'text'"
+    placeholder="Enter your password"
+    class="email__input"
+  />
+  <button (click)="passwordShow = !passwordShow">
+    <img src="assets/show.svg" alt="" />
+  </button>
+  <div class="afterWords">
+    <label class="chk">
+      <input class="chk__input" type="checkbox" />
+      <span class="chk__check"></span>
+      <span class="chk__text">Remember me</span>
+    </label>
+    <a href="/" class="second__word">Forgot Password?</a>
+  </div>
+  <div class="btns">
+    <a href="/" class="btn sign__btn">Sign in</a>
+    <a href="/" class="btn google__btn"><img src="assets/google.svg" alt="">Sign in with Google</a>
+  </div>
+  <div class="after__text">Don’t have an account? <a href="/">Sign up</a></div>
+</div>

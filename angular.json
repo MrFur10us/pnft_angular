@@ -29,6 +29,11 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/my-styles-folder"
+              ]
+            },
             "styles": [
               "src/styles.scss"
             ],
@@ -100,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
